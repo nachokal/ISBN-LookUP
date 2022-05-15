@@ -10,10 +10,11 @@ function getBookData() {
 }
 
 function populateWithData(data) {
-    document.querySelector(".data").innerHTML = 
-    `
+    let dataPortion = `
     <h3>${data.title}</h3>
     <h4>${data.subtitle}. ${data.publish_date}</h4>
     <p>${data.description}</p>
     `
+    document.querySelector(".data").innerHTML = dataPortion
+    
 }
